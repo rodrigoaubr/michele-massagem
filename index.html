@@ -207,6 +207,27 @@ footer a{text-decoration:none}
 footer a:hover{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
 footer .legal{margin-top:40px;padding-top:22px;border-top:1px solid rgba(233,223,196,.15);font-size:.82rem;color:#92a089;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
+/* instagram */
+.insta{background:var(--paper)}
+.insta .bar{display:flex;align-items:center;justify-content:center;gap:clamp(14px,3vw,32px);flex-wrap:wrap;margin-bottom:clamp(28px,4vw,48px)}
+.insta .who{display:flex;align-items:center;gap:16px}
+.insta .av{width:68px;height:68px;border-radius:50%;padding:3px;background:conic-gradient(from 200deg,var(--green-300),var(--green-700),var(--sand),var(--green-300))}
+.insta .av span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--green-800);color:var(--sand);font-family:var(--serif);font-size:1.35rem;letter-spacing:.04em;border:3px solid var(--paper)}
+.insta .who strong{display:block;font-family:var(--serif);font-weight:400;font-size:1.5rem;line-height:1.1}
+.insta .who a{color:var(--ink-soft);text-decoration:none;font-size:.95rem}
+.insta .who a:hover{color:var(--green-700);text-decoration:underline}
+.igrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,22px)}
+.ig{position:relative;display:block;aspect-ratio:4/5;border-radius:18px;overflow:hidden;text-decoration:none;color:var(--sand);background:linear-gradient(155deg,var(--green-700),var(--green-900));isolation:isolate;transition:transform .7s var(--ease),box-shadow .7s var(--ease)}
+.ig:nth-child(2){background:linear-gradient(200deg,var(--green-500),var(--green-800))}
+.ig:nth-child(3){background:linear-gradient(120deg,var(--green-900),var(--green-700))}
+.ig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1}
+.ig .lbl{position:absolute;inset:auto 0 0 0;padding:18px;display:flex;align-items:center;gap:10px;font-size:.92rem;background:linear-gradient(transparent,rgba(20,32,21,.6))}
+.ig svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.ig:hover{transform:translateY(-6px);box-shadow:0 26px 40px -24px rgba(31,48,32,.7)}
+.ig .ico{position:absolute;inset:0;display:grid;place-items:center;opacity:.35}
+.ig .ico svg{width:56px;height:56px;stroke-width:1.2}
+@media (max-width:640px){.igrid{grid-template-columns:repeat(2,1fr)}.ig:nth-child(3){display:none}}
+
 /* floating contact */
 .fab{position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:9px;background:var(--green-800);color:var(--paper);padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);border:1.5px solid rgba(233,223,196,.35);transition:transform .6s var(--ease),opacity .4s}
 .fab svg{width:20px;height:20px}
@@ -379,6 +400,38 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
+<section class="insta" id="instagram" aria-labelledby="h-ig">
+  <div class="wrap">
+    <h2 id="h-ig" class="rv" style="text-align:center;margin-bottom:34px">Acompanhe no Instagram</h2>
+    <div class="bar rv" style="--d:.08s">
+      <div class="who">
+        <div class="av" aria-hidden="true"><span>VP</span></div>
+        <div><strong>vilaparquestudio</strong><a href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener">@vilaparquestudio</a></div>
+      </div>
+      <a class="btn btn-green" href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener">Seguir no Instagram <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+    <!--
+      INSTAGRAM: para o feed automático, apague o bloco <div class="igrid"> abaixo e cole no lugar
+      o código do widget (Behold, Elfsight, SnapWidget etc.). Para fotos manuais, troque cada
+      <span class="ico">...</span> por: <img src="URL-DA-FOTO" alt="Descrição">  e o link por o endereço do post.
+    -->
+    <div class="igrid rv" style="--d:.16s">
+      <a class="ig" href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener" aria-label="Ver publicações no Instagram @vilaparquestudio">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span>
+        <span class="lbl"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Ver no Instagram</span>
+      </a>
+      <a class="ig" href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener" aria-label="Ver publicações no Instagram @vilaparquestudio">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span>
+        <span class="lbl"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Ver no Instagram</span>
+      </a>
+      <a class="ig" href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener" aria-label="Ver publicações no Instagram @vilaparquestudio">
+        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span>
+        <span class="lbl"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Ver no Instagram</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="agendar" aria-labelledby="h-cta">
   <img class="sym-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAABCCAYAAABKKV0QAAAXAUlEQVR4nO1dC5RcVZXdXanuppMYJGL4iR9Q4igMRD7iaAIo+AkOogI6ImgUBiczqCBfNfJTFAUUZY0w6oAx4IDiP4wooDhBRRQdUBAGgohABHUQ07TddFe7rmufmeP13vfue/V+VXX3WrWqurpe1atX9+577vnsM/Tru9dhwDEEYNbx3DCAeQAeB2DM+v/dAB5zHBcRERFROdoYbIwAmA9gVwCLAfwd758TeLwh9G8D+AKAWwGsL/l8IyIiIv4KQwNokW8GYD8AewE4EMDWCa/tAGhleO9vAfgIgK8UcJ4RERERGHQi1y6TTQG8BsCJALYrkLiTjn02rfSIiIiIUpGXtJqMObw3fu2DAVwH4GEAF5LEp0m6AvN4is/L31nRcRz3MwCn5/wOEREREQNN5NsCOBfAOIDLASzzWM4b+XeLvvI2H+e5JnLcNBeFCT6/CsD1XX6fiIiIiIEh8r0B/JQByGMSXmdIGwxyFoWORehjysI3AdRvFvhZEREREX1H5IbA/4eBRuOXbkomUFuR/L4ATqnxnCIiIvoYvUzkL2S6nyHwp/M549Zo2vUUl8upAHas4ZwiIiL6HL1I5M8EcC+AawA8jc9NKytYfN9Nu87GMr+i7hOJiIjoP/QSkZuMk7UAbgPwJA9Rmtsm6rErmwQMRnYsK35KZa+4jpHFwmCS9/b7+z5PrvMOAHYO/L4RERERfUXkZwK4C8DylNdJsNFHqIIZAI9awc+2utnXpcPnhfRHafk/xlsI5POODnx9RERERE+X6Esxz8sAXFnCAjU/8JgJkv6Iuun30FZ/6Gfu79F3iYiIiOgrIp9lDrgp6BFCNSJW2joO3U2kkex6Lha3ALgZwP8CeJDukwmeyxyW9j8FwLMAvIcB1qx55+Y9twQwl3nuEREREX1Zon8AgC9bz4mbRLtLWtbjCaVSmEbe5wG4CsDXc1rGQxTaWg3gbwKPGecCNEoy/3WOz43oH3XNuCOL6EuLfB6DmUbMyoUkch7n8Tow2VLf7x6S7iUAbi/gXM0k/CGt8/8E8NKAY0bppoG6j+h/zAY+N6wkk839EwBszvtFPEYWgGHGaH4L4BHGbkwm1wbGbKTCODR+E9HjaAqR78lSdh2o1Ocmz/swj4NXjhFf9ocB/BuAn5d47t8NJHLtDsqj5xLRHzAuuu0pl7w7gGcwjXYbAAsK+gxD4vexUO5+ANcCeIDzwDwfdwN9hia4Vj5AVcIpEvA0fcnihkAK+dmkb/zcJzuCpMMFWyhzaFnf60iHRMquwlhZv0N5eBldPy8BsETtViYp5vVFAN/hLaJ4aNeJIepdALwSwKusMR0q+6Bdi2IM6N2pFnzTAXkfzBz5EoDvA7g6Wu69jzqJfHMSicvHbPvCxdpOcq8Y6/v8ipo7yER9Eok8C+7ncUVaRSZ4ehiAt5A0BB1eu6TJfRJjBobko6WWDFOj8MeU12wFYCmAw5mhpCHjeEoZHyHBctuIcaXHhr6XzzVpitUuJckb6z2ih1AXke8B4IaE/+vimxZzsOcrq10T+gkALgDwB9S3m0jDJM95jL76NxRY5XoqtdZdmCI521bgBK/fsLL4DqKlHpGOEUsOYmda24epamM7XtNNzUYakef9jI5nV3sLkwEuA/DjGNNpPuog8iMAfCLFuu54yHBYWeZHAfgk6oPZMt8RkCFj//9F9Fl2A2PRr1GBYdc56KIoOxbS4fW0e5Ea+d93dHlugwJjeb8ZwBkVfFZZRC7YqOoc9GOBGWufpYpnDKA2EFUTuQk8Hqm2lq0Ui9zlD3wjgE973B2o0D1gyHifwNdqopXzzIPHcRew0npffT0nA/2wvsm/hpZlhNu18vcA3qlcWCHuqyYSuSzmMw7inlKZVaPW+17E202xFmIwS/T/W5G4zt5wWd+66EdeexxJ0EXiQuBVkfgrc5L4+7v4zNcx1UxIHOp9tWTunACJAjmm5dCeeT37jkb8P54M4BzVrETHIaQxSZXQFcXaDWn/nXS8kLSJr9iQRAMxCPR4WsHY1kMcJ0mtEyP6yCLfgqv31orUXBaGDMI2t28yiM5mQG7GyhapCxLgFMs3pDxfipVGcmxN51Gqd3denxmHxd0pYcE2lufXMNh4Pl0n+xTY2zUPsqartgoKnoa+//1s5nIFj41B84pR9mB8KosUhMTTrHCxwA1R3chg3vEWcddJ4nN5XuA5ypY2DWNckLKS+MvpszQkbvu6bdXFIiCpnwZf5SI8iFjGXq/rSOJpxNfvsNVEx61rsjUDo2b8fJQ58hEVoswBuYRt1/RnSQaK73OFqA5kZksRVZhF+/hNeb1LETENpn9nFpxLMpXPEox6JArshTIPubcZUJZjz+7Sp99r2I0uwOtI5qJtb7svmoayz8kea7qK2sa/sPDoB9zRRPQwkS+lOwUOcpnrGXhtpuaNObRWmoCzABzqKNRwVceKVStYHpB/LJhLMjkmZes7oXzbIkegZQnyNpOWvH3xl/8t+h87AfgRd1v6+0oQcKRmazyLq6MTcHO9f5oBYI+lpOswzV3kOrpZXsdAfUQP+cj3ZZpSR/m67cGhy/BlQOzV4ErDNwH4lJUdEFqE8T02YA4tkjJBpBB/rH5e8usFD6nCjrlMlTRkBUtcLAkSA1jHhbkfsT2LoezCnabBduGlpe6WvdjkfX+zK/0YgN83JN7VNyiayMW3aBfB2ANRP17N7VgdBT0hWE4xL63lkkTiegED70PcL89i+bwmZh/p2sRt8A0WRv0XxZTsgNOmTJs7IcNkl89/IoDfoL9ywM9nEU9R1ZFlwk7HrRshwdQOSbqjjLm22t2eRcnoiALQKrgZ8nWc/OCPN0Y/o+9zDmGVY9NIfEhplqzld/qjcmkkEaEEa8FAWQiJ761IXPce9eWDy4SYYFbFE6ir8kUPiYNWkKlCfYHDuvOhpVwsvYwhJVj1cWZZvMpKu8wbV6gKvSa41lIcYLtlTqTW0Dk0MCIaYpHvSlnXUNxCV0rZK3I3WzeTK/4FTva0AhsXqZt824sDzm8vNpK25XjTrOa3MUMg76J7jUPywPeZN/d4r1Hjnz2Wcga9gEcsJcQJNV5GPIU9NqQKWo7Xf/vQqcgAtMfZ+xjcL1NIrq9RBJEvVjKxPiLQBHU2UwrzwqViuFBJgW5CC9/ohOfFIUynmuRn2UUT9vdsWTneF9Gvnob96BKB5bqxMZmQV58XoTrqOsWsF8WU/hHAhWgubIE4BIrEZcEEFwFXwLLqnPgkXMDCv9g9q0IiH+KW/qGEBg8u4jKymUXAWJWvpuKfbyAexCKFbia+rkT1DXz99+e4EKTJ5+pdjJ64E55r+A1mzRThqx6mT/4nGY4J2WE0Ca+lPogN1xhtCpn5Cr5cmOJ3EQE0+/edn0Eyt2iEXE/x+8/wOzxe/e+DAN7bQJdr31rkj9IHJhajCFu5tCDM1vzW7k73z9kTK3hD4AKyAwX2Q3Aa+3G6LGS7AEd/RxGguoG5szMBwTbjp7Xhs8qXd7nD8C3ED2Qo+vkUBc+ajpczkGn6q7oQmrVTN0wq5G0cu6ae4ldsDzhFl2RSB6Ahzsf53E2OcrdqJKO35f0e3GUVidAF0fU60QvSujXv5w40ulxKJPJvMtVQJobPmvh5QF/LS5lr6oKp7jza0hjJgjMUOdsQa3mIgcJXeF5nk3jbkT1yDytZ0zDHoYfhmwBruasIzUHPCmP1vCvgdfIb110clNTr8vnMgMqi/VGFJR6SDWNqLj7DWMRP2fy7CsylUfFcAM9jADiN3LVyZlHXLymrDSTz06OF7kfeH+F4krikF0rJrpD4tFLS2zFgMP0DLc6FzO09mAN7llbJSjUhpnhLCszo4E+S9fUYA2E/UyQ+nuGaCYl/i+cdgq943nPa+k6H0Lp0BbKKgklVDIGcl5n0dWLWs9Cbdnvrcpxf2SQukgf27u1qNp7YgWNoVwpQXVshicuO+i4aUkfTam8z2+okq6hP0FJzqqUCsd3A/h0mLGPnOAaA3xoLi4qzyCWvGh4RrJYKXPxTwPttEjgYsqz+Ojh4OBcFX6D2VvW+47TSRxK+nzyW3cfnufCELoDG/5eEO1gqXoV/cLOM21afhHDVVnmLpHMe5Ryg4gv69ysDeazQ+3ndPkeLO0lzp+iWhN1e68fTLXqwY1c8UZBlrufXtFqwh1TsCGonfBwXvlhMlJPIkya+Js9VTCkKVUHbhtoMWXx2d9KKX+HQU9bw9ceU9EKogejzUftEky52+Ot92JFpl0kIzXYpEvo38k1IcSFd2YAqyIUkcMlt1yqUUoRSV5DPXpBNFeMlPV74Yruztue1f0+GatNu3E9J/UhX0Y8+gwFHViI3gZene/4nP+RKFl3kwWIGNJ+sWmbdQwXFXzBj43Y1MdYwk8OHfwXwzwEt2lwSAq5gpvaJH8otaZ7AopDPuNqqHlOTDvha7rJCJ2MeKd4isBl9+nljJXngGhdISBO9mX76S+ki6XeCMcJ4B3DnvYUj1VFfK0nldRldWdUl7crmM1hT0U/Vx6URuc7o0NCT/y0V5uxezbZpSVhguSiGafnvwoE1R/UDdZGYb+I+l++TNahou6DkM4to/5YXJ3JhSyLySS5GI7x2RtSrKmzBrbS5NQX2dTqVRoXxN2cJ0PYTdqaby1d0lVR0lpXIfTiXrkuT3TNQCL1gu5HExx3BtzpIfG0AiR9qkfhSruS7cLs2qsgdCWXrLVVmfze39llIfDuVGSIFGVo7Y1mNJA6q/tn58jZGlQUkPumysZCuiQ0k8anA7jdlQUsttJjXvw+J+jQPiWNASBxc3E/j9TCFZraFqGsxikCH42FKPXcsx8sVrJPoZ0gtiGnLeFSoRa4Ho8uP/MHAbvJF4EIW7UhfQVdWymetdMaPMipvpztJKqFOf/IV/Kyh/zqrW+EulRJnv3dWy75IiKUocY+QXp8darksKrkD07toGKCEjvR5oIN6Z1Mj5EEVjGtKcLIO2DIYOli7DWMqp1uuF3vO2gt0iJSAHgPTnmOMmuqZAK5Cf2BTZjgdb1VlLwghcnMhTraeE/2RFpstmI72VeDdAV3LH6YcbIeE8z3lb0+TgtV63hormYWT1boyuc2+C7wsQ/pf2fgD00CTCFJPwOcA+HHB57CYW2Px11cNl6Ik1E7sKIrChTYSifhL7Elj78CUa15kbnqbjzdyMVndA24XXasxq7wJRzADz4bRz78l7YI900HiUNWbV1ZI4keQxF151Tr3exEthBO4zfKRuMYkB5QtUzvFCsGP5xxcvqDv4Q0icakiTPt+2lo/RbmkusEwLYzrWTi2XHXlqRpCKHp8rWZwfzsWwEUSz4/vM1NsPgP7D3kWzqLcZy01j+fTa7CB6cbLG9zoQpP3R/j3d1SWlhZJ208y4dIs8gepRe3Cb2n5VoEky9ZeeKbZYejZGTWmJ9XWfYz54Yfk9HEOM93Q7pLUog6zKbZoEt4O4MMBr9PWkklDW5/z80ZYRXiOlXKq3TviA5XFtUp3yiqmlpqy+Ihy3DFipR9r6cIXjQ7vdY8AwSXMMLq2xOrpLDGh/Xl7jfU/KRbUC5+Jz3xb/kgicp/okGAeMz6qwGzAtutw+ntNjjGUFkWSiJdPr2V/7ja6wb8zx1yT053s1tM07EkXlA8uGdRQSQLtRzUL7ZGcvHD8pmJtyERHhUQ+xV3ffwy4z7sObEW+Ma61IjBtyWhIJzItSmf76m9iHcdVGbSZuv3OL6aM9fIUzaNpjskxGhdLmY6NNCIfUea7rAazipB2U9kOZUM0XZKI/BFWiOqKTA1fJx/7+Z+wQUMRZdKzjsHS1E47+vf2+S1ttKhpvjzF5bCQi2ySxV9U+plrUbYDYfbfN9ACv3qAMkyajGV0oZp7V+qi1jryoZPSPMVObHAF+tfTYr+d1bi387VZjNd5nP9PoXtuCZvVmMw5G1Mcf+Ijd7mdTlapwggh8neyMlOgCen1/IJVYA9OtFB0rMwG+aFaCRdNLpixFD9Z0HlL701NGi9tePRcOseH5vnK6x5hnORGWg0LKJK2KzOHjNpeGmSCFpWippX0plQRil6kVjMA5ksbjKgXmzNz6TSPmqqe42ljJs1QsMd8kkLmvZRc2MjCxI0ca6Mk7lF6BrZNcEuL0aQLp/Ri1ba44xJm3XkrhF1EPqS2uPbq8OUK84jBgKBpTYbAH0xEisYCRHnEVXAn/U33KXLv1jJbYvnHJyiWdQ8tcnOOWwL4eoMaTkszDRd0OzTJg5eeoq6uNS4k9SG137/bhgeyi3RlIZ3Fit9f5nzviOqxLwPswgUa0xk6HyVV5mqJB23gTTtSlEPHZUf55rURkSV29xe+cF/XMyFyTV62NV5HcBOU1TSqdt1KYiKBGExQ4XIUj3lcqZMGWbedksp0ryRZzGIx6OupLSTbNSO7n6QcdZ3XX4RV7kolPYk65bH7TG/nUb+BHBWqow+PqJ9G0i7UHuMyp20JD92HwTXvdVtF20XkOqdMUifyBtoCfZ+SiRVXheQOVwnj6sgDO4VQvoP+MS9j4UkZJA6SxWVWwGXcWkCaROJyjsa9ojGtrp0MXtfg0wPbts5HMvQ81VtlPf70Y/u3dEFSSU1g6M00VIwlHkm8t/F7FvdtyTidqfyFRaiTarxM0fUnvm2foeIi0pZnjI84Xj/qeK0L4uloO6x87QcfyqpXZb+JWe2gVg750LfVsBU10dy8EMKRe7mZPNLdGSE3rpQy8Vrmy4obYh5zWReWuIB0C61nIuQtt6rg2k3pxy01SSeVBLIm95u4Dd+W2UMR/YcfUZ98iFyxhoQqpCqku4BzcH6NnaGEAyS1WT+nd4xtXzAzDbaP3JU3fltNugUbM6QOpmGcAblLC/SD50EvCCgZBb+dCq6yS0Oa+qTrta4g9sW0vKUZeER/w55Pc0jqhzEpo+3glCTJ6zKhq+F1ltypjJ91xQv6TXciiXesLahuJFwlrgvcRodYmZsx8isXqy4ybTqJw9JDL7M7kYaQsk3OskW2Xztjve5kjt0VDhKvuz1dRHXzaYbFPSuYjrw7dXtMpglqJHHQEhcf+0msqVjCBBL5HrkboujJsFI9J5bwKuZQ1oELrc7yspW2J/i0w/fZoVtjiNWDscAjHD9kVgdq3IrqAo6W+v1kvI7SujqSg/8DCfn5vbB4RhSPGY7lM9nfYJQl7edRj6lIuOJwGjfSoHwiF5izmJduI7cEhHatiCtDJs/DtGTrhBbskkiwnJ9rq/Jd5gY3OV+7V2BbvXVApzvKNvkaii9VVZAW0Z8YpsyE8UTszf6pe9Cn3g3WM0ZzLb0K9zFIWyqEyJcyn1mnkf1ZVavsE/Cdl7KkkvKbhbwvIHlX2bi237GQKad1wJW+dT4bdJjfOFrZEWVgWCUmLGKwfBGVQeeowh9JBNlAot5I902W/reFQibLq62/L1IuFWcCesnQE/Vy3hZTiKpDgRuzyERRo/IW0t+xQtMEu7Oi2yBpWwVeT2dv1UjeEWXjMd7GaTDU5VbObZHbk2TLHtDtjai+UEh8gI/S1yeEq6s1xV9oV8Zp2EVDmvg3MD/Y7LCi+yQiIgAtbhv0JDVBwkjiEZp0RxkAFbebRP+lWEznxkr+rk+wSrTf7XH4Me4AtmJsJJJ4REQGi/wApsD833OhB0cMHIxs7YcAHGQ9b0uF2sUOLhgxtM9w7EUXWUREF2hTVhFKh7sXi1giqoHRQD6YAaDnkdCXsImHQFvkYCDoBqZbXU+/9x2x205ERLEW+S+ol9vUpgcRvYFNmK46l+6TcZK4KMpFRESUaJGbTtcGbyzrQyIGAiaT6IG6TyIiYhDRUjX/Ztsb/eMRERERPUjkJpH9Rfw7+sIjIiIi0Fv4EzCbYJoN/U3uAAAAAElFTkSuQmCC" width="370" height="66" alt="">
   <div class="wrap">
@@ -436,6 +489,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#agendar">Agendar atendimento</a></li>
         <li><a href="#visite">Como chegar</a></li>
+        <li><a href="https://www.instagram.com/vilaparquestudio/" target="_blank" rel="noopener">Instagram</a></li>
       </ul>
     </div>
     <div class="legal"><span>© <span id="yr">2026</span> Michelle Massagens – Copacabana. Massagem relaxante e massoterapia no Rio de Janeiro.</span><span>Serviços voltados ao relaxamento e ao bem-estar.</span></div>
