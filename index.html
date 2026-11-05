@@ -1,0 +1,499 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michelle Massagens | Massagem e Massoterapia em Copacabana</title>
+<meta name="description" content="Conheça a Michelle Massagens em Copacabana, Rio de Janeiro. Atendimento em massagem relaxante e massoterapia. Entre em contato e consulte os horários.">
+<meta name="theme-color" content="#2b4129">
+<meta property="og:title" content="Michelle Massagens | Massagem e Massoterapia em Copacabana">
+<meta property="og:description" content="Um espaço acolhedor para relaxar, desacelerar e reservar um momento de cuidado para você.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%232b4129'/%3E%3Cg fill='none' stroke='%23e9dfc4' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M60 100C34 92 24 64 56 24'/%3E%3Cpath d='M60 100C88 90 98 62 70 34'/%3E%3Cpath d='M60 100C48 82 50 62 62 44'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Michelle Massagens – Copacabana",
+  "description": "Massagem relaxante e massoterapia em Copacabana, Rio de Janeiro.",
+  "telephone": "+55 21 99335-1520",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Miguel Lemos, 44 – Sala 606",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "postalCode": "22071-000",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Copacabana, Rio de Janeiro"
+}
+</script>
+<style>
+:root{
+  --green-900:#1f3020;
+  --green-800:#2b4129;
+  --green-700:#3d5a38;
+  --green-500:#596f49;
+  --green-300:#a9bf99;
+  --mist:#e9eee0;
+  --paper:#f8f6ee;
+  --sand:#e9dfc4;
+  --ink:#27312a;
+  --ink-soft:#4d5a50;
+  --serif:"Marcellus","Trajan Pro",Georgia,serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --gutter:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--green-700);color:var(--sand)}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--green-500);outline-offset:3px;border-radius:4px}
+.on-dark :focus-visible,.hero :focus-visible,.cta :focus-visible,footer :focus-visible{outline-color:var(--sand)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--sand);color:var(--green-900);padding:8px 14px;z-index:100;border-radius:6px}
+.skip:focus{left:8px}
+
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;text-wrap:balance;letter-spacing:-.005em}
+h2{font-size:clamp(2rem,4.6vw,3.6rem)}
+p{max-width:62ch;text-wrap:pretty}
+.wrap{padding-inline:var(--gutter);max-width:1360px;margin-inline:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.6em;border-radius:999px;font-weight:600;font-size:.98rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .5s var(--ease),background .35s,color .35s,border-color .35s,box-shadow .5s var(--ease)}
+.btn svg{width:18px;height:18px;flex:none;transition:transform .5s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn:active{transform:scale(.97)}
+.btn-sand{background:var(--sand);color:var(--green-900)}
+.btn-sand:hover{background:#f3ecd6;box-shadow:0 10px 28px -10px rgba(0,0,0,.45)}
+.btn-ghost{border-color:rgba(233,223,196,.5);color:var(--sand)}
+.btn-ghost:hover{background:rgba(233,223,196,.12);border-color:var(--sand)}
+.btn-green{background:var(--green-800);color:var(--paper)}
+.btn-green:hover{background:var(--green-700);box-shadow:0 10px 28px -12px rgba(31,48,32,.6)}
+.btn-line{border-color:var(--green-800);color:var(--green-800)}
+.btn-line:hover{background:var(--green-800);color:var(--paper)}
+
+/* header */
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .5s,box-shadow .5s,padding .5s var(--ease);padding-block:18px}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+header.top.scrolled{background:rgba(248,246,238,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(43,65,41,.12);padding-block:10px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--sand);transition:color .4s}
+.logo img{height:52px;width:auto}
+.logo .l-dark{display:none}
+header.top.scrolled .logo .l-light{display:none}
+header.top.scrolled .logo .l-dark{display:block}
+header.top.scrolled .logo{color:var(--green-800)}
+nav.main{display:flex;align-items:center;gap:clamp(18px,2.6vw,38px)}
+nav.main a:not(.btn){text-decoration:none;font-size:.95rem;color:var(--sand);position:relative;padding-block:4px;transition:color .4s}
+nav.main a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+nav.main a:not(.btn):hover::after{transform:scaleX(1)}
+header.top.scrolled nav.main a:not(.btn){color:var(--ink)}
+header.top.scrolled .btn-sand{background:var(--green-800);color:var(--paper)}
+.menu-btn{display:none;background:none;border:0;color:var(--sand);width:44px;height:44px;cursor:pointer;border-radius:50%}
+header.top.scrolled .menu-btn{color:var(--green-800)}
+.menu-btn span{display:block;width:24px;height:1.5px;background:currentColor;margin:6px auto;transition:transform .5s var(--ease),opacity .3s}
+.menu-btn[aria-expanded="true"] span:first-child{transform:translateY(3.7px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-3.7px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;background:var(--green-800);color:var(--sand);overflow:hidden;display:flex;align-items:center;padding-block:130px 90px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(60% 60% at 78% 45%,rgba(95,130,80,.55),transparent 70%),
+  radial-gradient(50% 50% at 10% 100%,rgba(15,28,16,.7),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:clamp(24px,5vw,80px);width:100%}
+.hero h1{font-size:clamp(2.7rem,7vw,5.9rem);color:var(--paper);letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--green-300)}
+.hero .lead{margin-top:28px;font-size:clamp(1.05rem,1.5vw,1.25rem);color:#dfe5d2;max-width:46ch}
+.hero .actions{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+.hero .meta{margin-top:46px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:.92rem;color:var(--green-300)}
+.hero .meta span{display:inline-flex;align-items:center;gap:9px}
+.hero .meta i{width:7px;height:7px;border-radius:50%;background:var(--green-300);box-shadow:0 0 0 0 rgba(169,191,153,.7);animation:ping 2.8s infinite}
+@keyframes ping{70%,100%{box-shadow:0 0 0 10px rgba(169,191,153,0)}}
+
+.breath{position:relative;aspect-ratio:1;width:min(100%,520px);margin-inline:auto;display:grid;place-items:center;--px:0;--py:0}
+.breath .ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(233,223,196,.28);animation:breathe 9s ease-in-out infinite;transform:translate(calc(var(--px)*1px),calc(var(--py)*1px))}
+.breath .ring:nth-child(2){inset:9%;animation-delay:-.5s;border-color:rgba(233,223,196,.22)}
+.breath .ring:nth-child(3){inset:18%;animation-delay:-1s;border-color:rgba(233,223,196,.18);background:radial-gradient(circle,rgba(95,130,80,.25),transparent 70%)}
+@keyframes breathe{0%,100%{transform:translate(calc(var(--px)*1px),calc(var(--py)*1px)) scale(.9)}50%{transform:translate(calc(var(--px)*1px),calc(var(--py)*1px)) scale(1.04)}}
+.breath .sym{position:relative;width:62%;height:auto;transform:translate(calc(var(--px)*-1.6px),calc(var(--py)*-1.6px));clip-path:inset(0 100% 0 0);animation:reveal 2.8s .3s var(--ease) forwards}
+@keyframes reveal{to{clip-path:inset(0 0 0 0)}}
+.breath .cue{position:absolute;bottom:-4%;left:50%;transform:translateX(-50%);text-align:center;font-family:var(--serif);font-size:1.25rem;letter-spacing:.14em;color:var(--sand);white-space:nowrap}
+.breath .cue small{display:block;font-family:var(--sans);font-size:.74rem;letter-spacing:.06em;color:var(--green-300);margin-top:4px}
+#cue-word{display:inline-block;transition:opacity .6s,transform .8s var(--ease)}
+#cue-word.swap{opacity:0;transform:translateY(6px)}
+.scroll-hint{position:absolute;left:50%;bottom:22px;width:1px;height:44px;background:linear-gradient(var(--sand),transparent);transform-origin:top;animation:hint 2.4s var(--ease) infinite;opacity:.6}
+@keyframes hint{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* marquee */
+.band{background:var(--sand);color:var(--green-900);overflow:hidden;border-block:1px solid rgba(43,65,41,.15)}
+.band div{display:flex;width:max-content;animation:slide 38s linear infinite}
+.band span{font-family:var(--serif);font-size:clamp(1.3rem,2.4vw,1.9rem);padding:18px 0;display:inline-flex;align-items:center;white-space:nowrap}
+.band span::after{content:"";width:48px;height:22px;margin-inline:34px;flex:none;background:no-repeat center/contain url("mark-dark.png")}
+@keyframes slide{to{transform:translateX(-50%)}}
+.band:hover div{animation-play-state:paused}
+
+/* sections */
+section{padding-block:clamp(72px,11vw,150px)}
+.about .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,7vw,110px);align-items:center}
+.about h2{margin-bottom:28px}
+.about p+p{margin-top:1.1em}
+.about p{color:var(--ink-soft)}
+.about .tag{display:inline-block;margin-top:34px}
+.visual{position:relative;aspect-ratio:4/5;border-radius:46% 54% 40% 60% / 38% 44% 56% 62%;background:linear-gradient(160deg,var(--green-700),var(--green-900));overflow:hidden;display:grid;place-items:center;color:var(--sand);animation:morph 18s ease-in-out infinite;box-shadow:0 40px 70px -40px rgba(31,48,32,.7)}
+@keyframes morph{50%{border-radius:58% 42% 52% 48% / 50% 56% 44% 50%}}
+.visual img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.visual figcaption{position:absolute;bottom:17%;left:0;right:0;text-align:center;font-size:.8rem;letter-spacing:.08em;color:var(--green-300);padding-inline:22%}
+.visual .pulse{position:absolute;width:70%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(233,223,196,.2);animation:breathe 9s ease-in-out infinite}
+
+.services{background:var(--mist)}
+.services .head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,64px)}
+.services .head p{color:var(--ink-soft)}
+.svc{list-style:none;border-top:1px solid rgba(43,65,41,.25)}
+.svc li{border-bottom:1px solid rgba(43,65,41,.25)}
+.svc a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:clamp(16px,4vw,56px);align-items:center;padding-block:clamp(26px,3.4vw,44px);text-decoration:none;position:relative;transition:padding .6s var(--ease),color .4s}
+.svc a::before{content:"";position:absolute;inset:0 calc(var(--gutter)*-1);background:var(--green-800);transform:scaleY(0);transform-origin:bottom;transition:transform .6s var(--ease);z-index:0}
+.svc a>*{position:relative;z-index:1}
+.svc h3{font-size:clamp(1.6rem,3.2vw,2.7rem);transition:transform .6s var(--ease)}
+.svc p{color:var(--ink-soft);transition:color .4s}
+.svc .go{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--green-800);display:grid;place-items:center;transition:background .4s,border-color .4s,transform .6s var(--ease)}
+.svc .go svg{width:20px;height:20px;transition:transform .6s var(--ease)}
+.svc a:hover::before,.svc a:focus-visible::before{transform:scaleY(1)}
+.svc a:hover h3,.svc a:focus-visible h3{transform:translateX(14px);color:var(--paper)}
+.svc a:hover p,.svc a:focus-visible p{color:#d4dcc6}
+.svc a:hover .go,.svc a:focus-visible .go{background:var(--sand);border-color:var(--sand);color:var(--green-900);transform:rotate(-45deg)}
+.note{margin-top:30px;font-size:.92rem;color:var(--ink-soft);max-width:70ch}
+
+.why .intro{max-width:760px;margin-bottom:clamp(40px,6vw,80px)}
+.why-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,3vw,40px)}
+.why-item{padding-top:22px;border-top:1.5px solid var(--green-700)}
+.why-item:nth-child(1){grid-column:1/6}
+.why-item:nth-child(2){grid-column:7/13;margin-top:clamp(0px,6vw,80px)}
+.why-item:nth-child(3){grid-column:1/6}
+.why-item:nth-child(4){grid-column:7/13;margin-top:clamp(0px,6vw,80px)}
+.why-item svg{width:44px;height:44px;color:var(--green-700);margin-bottom:18px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.why-item h3{font-size:clamp(1.5rem,2.5vw,2.1rem);margin-bottom:10px}
+.why-item p{color:var(--ink-soft)}
+
+.cta{background:var(--green-800);color:var(--paper);position:relative;overflow:hidden;text-align:center;isolation:isolate}
+.cta::before{content:"";position:absolute;inset:-30% -10%;z-index:-1;background:radial-gradient(40% 50% at 50% 50%,rgba(95,130,80,.5),transparent 70%);animation:breathe 9s ease-in-out infinite}
+.cta h2{font-size:clamp(2.3rem,6vw,4.8rem);margin-inline:auto;max-width:16ch}
+.cta p{margin:24px auto 0;color:#dbe3cd;font-size:1.15rem}
+.cta .actions{margin-top:40px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.cta .sym-bg{position:absolute;left:50%;top:50%;width:min(1100px,130vw);height:auto;transform:translate(-50%,-50%);opacity:.08;z-index:-1}
+
+.visit .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,6vw,90px);align-items:stretch}
+.visit h2{margin-bottom:34px}
+.info{display:grid;gap:26px;font-style:normal}
+.info div{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.info svg{width:26px;height:26px;color:var(--green-700);fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.info strong{display:block;font-family:var(--serif);font-weight:400;font-size:1.25rem;margin-bottom:2px}
+.info a{text-decoration:none;border-bottom:1px solid var(--green-300);transition:border-color .3s,color .3s}
+.info a:hover{border-color:var(--green-700);color:var(--green-700)}
+.visit .actions{margin-top:38px;display:flex;gap:12px;flex-wrap:wrap}
+.map{border-radius:28px;overflow:hidden;min-height:420px;background:var(--mist);box-shadow:0 30px 60px -36px rgba(31,48,32,.55)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(.75) contrast(.97)}
+
+footer{background:var(--green-900);color:#cdd6c0;padding-block:56px 34px;font-size:.95rem}
+footer .row{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start}
+footer .logo{color:var(--sand)}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--sand);text-decoration:underline;text-underline-offset:4px}
+footer .legal{margin-top:40px;padding-top:22px;border-top:1px solid rgba(233,223,196,.15);font-size:.82rem;color:#92a089;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* floating contact */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:9px;background:var(--green-800);color:var(--paper);padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);border:1.5px solid rgba(233,223,196,.35);transition:transform .6s var(--ease),opacity .4s}
+.fab svg{width:20px;height:20px}
+.fab.hide{transform:translateY(90px);opacity:0;pointer-events:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(34px);filter:blur(6px);transition:opacity 1s var(--ease),transform 1.1s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none;filter:none}
+
+@media (max-width:900px){
+  .menu-btn{display:block}
+  nav.main{position:fixed;inset:0;background:var(--green-900);flex-direction:column;justify-content:center;gap:28px;clip-path:circle(0% at calc(100% - 40px) 40px);transition:clip-path .8s var(--ease);visibility:hidden}
+  nav.main.open{clip-path:circle(150% at calc(100% - 40px) 40px);visibility:visible}
+  nav.main a:not(.btn){font-family:var(--serif);font-size:1.9rem;color:var(--sand)!important}
+  header.top .menu-btn{position:relative;z-index:2}
+  body.menu-open header.top .menu-btn{color:var(--sand)}
+  .hero .wrap{grid-template-columns:1fr}
+  .breath{width:min(80%,360px);margin-top:20px;order:2}
+  .hero{padding-block:110px 100px}
+  .about .wrap,.visit .wrap{grid-template-columns:1fr}
+  .visual{max-width:420px;aspect-ratio:1/1.05}
+  .svc a{grid-template-columns:1fr auto}
+  .svc a p{grid-column:1;grid-row:2}
+  .svc .go{grid-column:2;grid-row:1/3}
+  .why-item:nth-child(n){grid-column:1/-1;margin-top:0}
+  .fab{display:inline-flex}
+  .scroll-hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .breath .sym{clip-path:none}
+  .js .rv{opacity:1;transform:none;filter:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: Um site que faz o visitante desacelerar antes de agendar: respiração como interface; recusa o template spa genérico (foto de pedras + creme + cartões iguais).
+OWN-WORLD: verde oliva profundo (#2b4129) do logotipo, areia (#e9dfc4) e branco-papel; serifada Marcellus em caixa alta espaçada como o logotipo; símbolo orgânico de três traços reutilizado como motivo.
+STORY: entende que é um espaço calmo e profissional em Copacabana, confia nas informações claras, toca em Agendar pelo WhatsApp.
+FIRST VIEWPORT: campo verde total; título grande à esquerda com botões WhatsApp / Como chegar; à direita o símbolo se desenha dentro de anéis que respiram (inspire / expire).
+FORM: pinned pelo briefing (identidade do logotipo); seed: n/a (direção definida pelo usuário).
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M20 11.5A8 8 0 0 1 8.2 18.6L4 20l1.4-4A8 8 0 1 1 20 11.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.2 8.6c.3 2.6 2.3 4.7 5 5.4l1-1.2-1.7-1-.8.6a3.6 3.6 0 0 1-1.9-1.9l.6-.8-1-1.7-1.2 1Z" fill="currentColor"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Michelle Massagens – início">
+      <img class="l-light" src="logo-light.png" width="370" height="126" alt="Michelle Massagens – Copacabana">
+      <img class="l-dark" src="logo-dark.png" width="370" height="126" alt="" aria-hidden="true">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <nav class="main" id="nav" aria-label="Principal">
+      <a href="#sobre">O espaço</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#visite">Localização</a>
+      <a class="btn btn-sand" href="#agendar">Agendar atendimento</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+<section class="hero" id="inicio" aria-labelledby="h1">
+  <div class="wrap">
+    <div>
+      <h1 id="h1" class="rv">Massagens e bem-estar em <em>Copacabana</em></h1>
+      <p class="lead rv" style="--d:.12s">Um espaço acolhedor para relaxar, desacelerar e reservar um momento de cuidado para você.</p>
+      <div class="actions rv" style="--d:.24s">
+        <a class="btn btn-sand" data-wa href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Encontrei%20a%20Michelle%20Massagens%20pelo%20site%20e%20gostaria%20de%20conhecer%20os%20servi%C3%A7os%20e%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20agendamento." target="_blank" rel="noopener">Agendar pelo WhatsApp <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#visite">Como chegar</a>
+      </div>
+      <div class="meta rv" style="--d:.36s">
+        <span><i></i>Aberto 24 horas</span>
+        <span>R. Miguel Lemos, 44 · Sala 606</span>
+      </div>
+    </div>
+    <div class="breath rv" style="--d:.2s" id="breath" role="img" aria-label="Símbolo da Michelle Massagens dentro de círculos que se expandem e contraem, convidando a respirar">
+      <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+      <img class="sym" src="mark-light.png" width="370" height="66" alt="">
+      <div class="cue" aria-hidden="true"><span id="cue-word">Inspire</span><small>respire junto, é o primeiro passo</small></div>
+    </div>
+  </div>
+  <span class="scroll-hint" aria-hidden="true"></span>
+</section>
+
+<div class="band" aria-hidden="true">
+  <div>
+    <span>Relaxamento</span><span>Bem-estar</span><span>Acolhimento</span><span>Tranquilidade</span><span>Cuidado</span>
+    <span>Relaxamento</span><span>Bem-estar</span><span>Acolhimento</span><span>Tranquilidade</span><span>Cuidado</span>
+  </div>
+</div>
+
+<section class="about" id="sobre" aria-labelledby="h-sobre">
+  <div class="wrap">
+    <div>
+      <h2 id="h-sobre" class="rv">Um espaço para cuidar de você</h2>
+      <p class="rv" style="--d:.1s">Na Michelle Massagens, em Copacabana, você encontra atendimento especializado em massagem relaxante, massoterapia e técnicas voltadas ao relaxamento e ao bem-estar.</p>
+      <p class="rv" style="--d:.18s">Nosso espaço foi preparado para proporcionar conforto, tranquilidade e um momento de cuidado com o corpo e a mente. Com atendimento personalizado e atenção às necessidades de cada pessoa, buscamos oferecer uma experiência acolhedora para quem deseja desacelerar a rotina, aliviar a sensação de tensão muscular e reservar um tempo para si.</p>
+      <a class="btn btn-line tag rv" style="--d:.26s" href="#servicos">Conhecer os serviços <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+    <figure class="visual rv" style="--d:.15s">
+      <img class="photo" src="espaco.jpg" width="640" height="640" loading="lazy" alt="Ambiente acolhedor da Michelle Massagens, com velas, plantas e maca de massagem ao fundo">
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="servicos" aria-labelledby="h-serv">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="h-serv" class="rv">Atendimentos</h2>
+      <p class="rv" style="--d:.1s">Toque em um atendimento para consultar horários.</p>
+    </div>
+    <ul class="svc">
+      <li class="rv"><a href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20massagem%20relaxante." target="_blank" rel="noopener">
+        <h3>Massagem relaxante</h3>
+        <p>Um momento para desacelerar, soltar a rotina e se sentir confortável no próprio corpo.</p>
+        <span class="go"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a></li>
+      <li class="rv"><a href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20massoterapia." target="_blank" rel="noopener">
+        <h3>Massoterapia</h3>
+        <p>Atendimento voltado ao bem-estar e ao alívio da sensação de tensão muscular do dia a dia.</p>
+        <span class="go"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a></li>
+      <li class="rv"><a href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20t%C3%A9cnicas%20de%20massagem." target="_blank" rel="noopener">
+        <h3>Técnicas para relaxamento e conforto corporal</h3>
+        <p>Técnicas de massagem pensadas para o relaxamento e para o conforto do corpo.</p>
+        <span class="go"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a></li>
+      <li class="rv"><a href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis." target="_blank" rel="noopener">
+        <h3>Atendimento personalizado</h3>
+        <p>Atenção às necessidades de cada pessoa, para uma experiência acolhedora do início ao fim.</p>
+        <span class="go"><svg aria-hidden="true"><use href="#arrow"/></svg></span></a></li>
+    </ul>
+    <p class="note rv">Duração e valores das sessões são informados no contato. As massagens têm foco em relaxamento e bem-estar, sem promessa de resultado terapêutico.</p>
+  </div>
+</section>
+
+<section class="why" id="diferenciais" aria-labelledby="h-why">
+  <div class="wrap">
+    <div class="intro">
+      <h2 id="h-why" class="rv">Pensado para você desacelerar</h2>
+    </div>
+    <div class="why-grid">
+      <article class="why-item rv">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34c6-12 14-12 20-4s10 4 12-6"/><path d="M8 40h32"/><circle cx="34" cy="12" r="4"/></svg>
+        <h3>Ambiente tranquilo</h3>
+        <p>Um espaço preparado para proporcionar conforto e silêncio no meio de Copacabana.</p>
+      </article>
+      <article class="why-item rv" style="--d:.1s">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S8 30 8 18a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 12-16 22-16 22Z"/></svg>
+        <h3>Atendimento personalizado</h3>
+        <p>Atenção às necessidades de cada pessoa, com cuidado do começo ao fim da sessão.</p>
+      </article>
+      <article class="why-item rv">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 4"/></svg>
+        <h3>Aberto 24 horas</h3>
+        <p>Horário informado no perfil da empresa. Consulte a disponibilidade e escolha o melhor momento.</p>
+      </article>
+      <article class="why-item rv" style="--d:.1s">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 44s14-12 14-24a14 14 0 0 0-28 0c0 12 14 24 14 24Z"/><circle cx="24" cy="20" r="5"/></svg>
+        <h3>No coração de Copacabana</h3>
+        <p>Rua Miguel Lemos, 44, fácil de chegar para quem mora ou está hospedado na região.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="agendar" aria-labelledby="h-cta">
+  <img class="sym-bg" src="mark-light.png" width="370" height="66" alt="">
+  <div class="wrap">
+    <h2 id="h-cta" class="rv">Agende seu momento de cuidado</h2>
+    <p class="rv" style="--d:.1s">Entre em contato para consultar os horários disponíveis, conhecer os atendimentos e agendar sua sessão.</p>
+    <div class="actions rv" style="--d:.2s">
+      <a class="btn btn-sand" data-wa href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Encontrei%20a%20Michelle%20Massagens%20pelo%20site%20e%20gostaria%20de%20conhecer%20os%20servi%C3%A7os%20e%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20agendamento." target="_blank" rel="noopener">Agendar pelo WhatsApp <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      <a class="btn btn-ghost" href="tel:+5521993351520">Ligar agora · (21) 99335-1520</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visite" aria-labelledby="h-visit">
+  <div class="wrap">
+    <div>
+      <h2 id="h-visit" class="rv">Como chegar</h2>
+      <address class="info rv" style="--d:.1s">
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><strong>Endereço</strong>R. Miguel Lemos, 44 – Sala 606<br>Copacabana, Rio de Janeiro – RJ<br>CEP 22071-000</span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+          <span><strong>Telefone</strong><a href="tel:+5521993351520">(21) 99335-1520</a></span>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span><strong>Horário</strong>Aberto 24 horas, conforme informado no Google. Consulte a disponibilidade antes de vir.</span>
+        </div>
+      </address>
+      <div class="actions rv" style="--d:.2s">
+        <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&query=R.+Miguel+Lemos,+44,+Copacabana,+Rio+de+Janeiro+-+RJ,+22071-000" target="_blank" rel="noopener">Abrir no Google Maps <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="map rv" style="--d:.15s">
+      <iframe title="Mapa: Michelle Massagens, R. Miguel Lemos, 44, Copacabana" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+Miguel+Lemos,+44,+Copacabana,+Rio+de+Janeiro+-+RJ,+22071-000&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <a class="logo" href="#inicio"><img class="l-light" src="logo-light.png" width="370" height="126" alt="Michelle Massagens – Copacabana">
+      <img class="l-dark" src="logo-dark.png" width="370" height="126" alt="" aria-hidden="true">
+    </a>
+      <ul>
+        <li>R. Miguel Lemos, 44 – Sala 606</li>
+        <li>Copacabana, Rio de Janeiro – RJ · 22071-000</li>
+        <li><a href="tel:+5521993351520">(21) 99335-1520</a></li>
+      </ul>
+      <ul>
+        <li><a href="#sobre">O espaço</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#agendar">Agendar atendimento</a></li>
+        <li><a href="#visite">Como chegar</a></li>
+      </ul>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Michelle Massagens – Copacabana. Massagem relaxante e massoterapia no Rio de Janeiro.</span><span>Serviços voltados ao relaxamento e ao bem-estar.</span></div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/5521993351520?text=Ol%C3%A1!%20Encontrei%20a%20Michelle%20Massagens%20pelo%20site%20e%20gostaria%20de%20consultar%20os%20hor%C3%A1rios." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>Agendar</a>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var top=$('#top'),menuBtn=$('#menuBtn'),nav=$('#nav'),fab=$('#fab');
+  $('#yr').textContent=new Date().getFullYear();
+
+  function onScroll(){
+    top.classList.toggle('scrolled',window.scrollY>40);
+    var hero=$('#inicio').offsetHeight*0.7;
+    var cta=$('#agendar').getBoundingClientRect();
+    var inCta=cta.top<innerHeight&&cta.bottom>0;
+    fab.classList.toggle('hide',window.scrollY<hero||inCta);
+  }
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  function setMenu(open){
+    nav.classList.toggle('open',open);
+    menuBtn.setAttribute('aria-expanded',open);
+    menuBtn.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');
+    document.body.classList.toggle('menu-open',open);
+    document.body.style.overflow=open?'hidden':'';
+  }
+  menuBtn.addEventListener('click',function(){setMenu(!nav.classList.contains('open'))});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+  addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+
+  /* reveal */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+
+  /* breathing cue: 4.5s inhale / 4.5s exhale, synced with CSS 9s cycle */
+  var word=$('#cue-word'),inhale=true;
+  setInterval(function(){
+    word.classList.add('swap');
+    setTimeout(function(){inhale=!inhale;word.textContent=inhale?'Inspire':'Expire';word.classList.remove('swap')},500);
+  },4500);
+
+  /* pointer parallax on rings */
+  var b=$('#breath');
+  if(matchMedia('(hover:hover) and (prefers-reduced-motion:no-preference)').matches){
+    addEventListener('pointermove',function(e){
+      var x=(e.clientX/innerWidth-.5)*2,y=(e.clientY/innerHeight-.5)*2;
+      b.style.setProperty('--px',(x*14).toFixed(1));b.style.setProperty('--py',(y*14).toFixed(1));
+    },{passive:true});
+  }
+})();
+</script>
+</body>
+</html>
